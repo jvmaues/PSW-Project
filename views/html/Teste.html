@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Inserção de Demanda - Bolsa de Horas</title>
+</head>
+<body>
+    <h1>Inserção da Demanda</h1>
+	<form method="POST" action="visualizar_demandas.html" onsubmit="return enviarDados();">
+		<table>
+			<tr>
+				<td>Titulo do Pedido: </td>
+				<td><input type="text" placeholder="Digite o titulo do pedido" name="titulo" id="titulo"></td>
+			</tr>
+			<tr>
+				<td>Estimativa de Horas: </td>
+				<td><input type="number" name="horas" id="horas"></td>
+			</tr>
+			<tr>
+				<td>Prazo de entrega: </td>
+				<td><input type="date" name="prazo" id="prazo"></td>
+			</tr>
+			<tr>
+				<td>Especialidade necessária: </td>
+				<td>
+					<select name="especialidade" id="especialidade">
+						<option value="0"></option>
+						<option value="1">Programador</option>
+						<option value="2">Gerente</option>
+                        <option value="3">Suporte</option>
+                        <option value="4">DBA</option>
+					</select>
+				</td>
+			</tr>
+            <tr>
+				<td>Descrição da Demanda: </td>
+				<td><textarea name="Descrição" placeholder="Descreva os detalhes da demanda" cols="30" rows="10"></textarea></td>
+			</tr>
+		</table>
+		<tr>
+			<td><input type="submit" value="Cancelar"></td>
+			<td><input type="reset" value="Limpar"></td>
+			<td><input type="submit" value="Registrar Demanda"></td>
+		</tr>
+	</form>
+ 
+</body>
+</html>
+
+
